@@ -15,9 +15,16 @@ class ProjectViewer extends Component {
   render() {
     const { projects } = this.props;
     const projectsList = projects.map( (project) => {
-      const { id, title, tags, description } = project ;
+      const { id, title, tags, description, url, gitUrl } = project ;
       return (
-        <Project key={id} title={title} description={description} tags={tags}/>
+        <Project
+          pid={id}
+          url={url}
+          gitUrl={gitUrl}
+          title={title}
+          description={description}
+          tags={tags}
+        />
       );
     });
     return (

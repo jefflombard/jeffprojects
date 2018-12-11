@@ -1,8 +1,16 @@
 .project-card {
   border: 1px solid black;
-  height: 200px;
+  height: 180px;
   margin: 30px auto;
-  padding: 10px;
-  width: 200px;
+  padding: 20px;
+  width: 180px;
   word-wrap: break-word;
+
+  &:hover{
+    background: black;
+  }
+}
+
+a,a:visited .project-card p {
+  color: black;
 }
