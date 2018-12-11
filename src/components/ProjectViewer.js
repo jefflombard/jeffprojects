@@ -13,7 +13,7 @@ class ProjectViewer extends Component {
   }
 
   render() {
-    const { projects } = this.props;
+    const { projects, tags, actions } = this.props;
     const projectsList = projects.map( (project) => {
       const { id, title, tags, description, url, gitUrl } = project ;
       return (
@@ -27,8 +27,17 @@ class ProjectViewer extends Component {
         />
       );
     });
+    const tagsList = tags.map( (tag) => {
+      return (
+        <button className="tag">{String(tag)}</button>
+      );
+    });
     return (
       <div className="project-viewer">
+        <Container>
+          {tagsList}
+          <button className="tag" onClick={actions.clearFilters()}>clear all</button>
+        </Container>
         <Container>
           <Row>
             {projectsList}
@@ -40,7 +49,7 @@ class ProjectViewer extends Component {
 }
 
 function mapStateToProps(state) {
-  return { projects: state.projects };
+  return { projects: state.projects, tags: state.filters };
 }
 
 function mapDispatchToProps(dispatch) {

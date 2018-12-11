@@ -21,4 +21,3 @@ branch: `build`
 - added `redux`, `redux-thunk`, `react-redux`, and place holder root reducer. Will use in managing state throughout the application.
 - added `node-sass`, will use scss.
 - added `react-grid-system`, will use as a convenient way to make it responsive.
-
