@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.scss';
+import ProjectViewer from './ProjectViewer';
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
         <header>
           <h1>jeff's recent projects</h1>
         </header>
+        <ProjectViewer />
       </div>
     );
   }
