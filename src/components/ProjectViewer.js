@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { Row, Container } from 'react-grid-system';
 
 import actionCreators from '../actionCreators';
 import Project from './Project';
+import './ProjectViewer.scss';
 
 class ProjectViewer extends Component {
   componentDidMount(){
@@ -20,7 +22,11 @@ class ProjectViewer extends Component {
     });
     return (
       <div className="project-viewer">
-        {projectsList}
+        <Container>
+          <Row>
+            {projectsList}
+          </Row>
+        </Container>
       </div>
     );
   }
