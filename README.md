@@ -9,7 +9,7 @@ A simple react app bootstrapped with [Create React App](https://github.com/faceb
 1. `yarn start`
 
 # Build Process
-## Design and Setup (20 min)
+## Design and Setup
 branch: `setup`
 
 - "Plan first, code second" I didn't want to jump right into coding without having at least a rough idea of what I was planning to build. plan for this so I did some [rough ui designs](designs/projects.sketch).
@@ -22,3 +22,7 @@ branch: `build`
 - added `node-sass`, will use scss.
 - added `react-grid-system`, will use as a convenient way to make it responsive.
 
+## Filtering
+branch: `filter`
+
+- started implementing a filter, see this branch for more details.
