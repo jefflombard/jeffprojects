@@ -14,3 +14,11 @@ branch: `setup`
 
 - "Plan first, code second" I didn't want to jump right into coding without having at least a rough idea of what I was planning to build. plan for this so I did some [rough ui designs](designs/projects.sketch).
 - Decided to use [Create React App](https://github.com/facebook/create-react-app) and deployed with [Netlify](https://www.netlify.com/). No real reason at this point to use anything custom.
+
+## Build
+branch: `build`
+
+- added `redux`, `redux-thunk`, `react-redux`, and place holder root reducer. Will use in managing state throughout the application.
+- added `node-sass`, will use scss.
+- added `react-grid-system`, will use as a convenient way to make it responsive.
+
